@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Tailwind/tailwindstyle.css">
+    <title>Conceitos fundamentais</title>
+</head>
+<body>
+    <!--IMPORTANTE-->
+    <!--O tailwind vem com o normalize css nele, ou seja, ele vai matar toda formatação que exista por padrão em
+    classes htmls que ja vem com uma-->
+
+    <br/> 
+    
+    <!--Mudar cores-->
+    <h1 class="bg-green-500 text-red-300">Mudando cor</h1>
+    <h1 class="hover:bg-purple-800 hover:text-white">Usando hover</h1>
+
+    <br/>
+
+    <button class="bg-blue-500 hover:bg-blue-200 text-white font-bold py-2 px-4 text-xl rounded">Botão</button>
+
+    <br/>
+    <br/>
+
+    <!--Evento focus diferente-->
+    <input type="text" placeholder="Clica em mim" class="bg-gray-300 text-gray-900 focus:bg-red-700 focus:text-red-400" >
+
+    <br/>
+    <br/>
+
+    <!--Usando components(NAO É A MESMA COISA QUE REACT, nada mais é do que uma classe customizada que eu crio la no
+    arquivo de input pro tailwind, e que quando ele gerar a folha de estilos tailwind, vai ter uma classe a mais
+    que vai ser meio que uma super classe, com todas as outras pra ficar menos extenso)-->
+    <button class="btn-blue">Botão</button>    
+    
+</body>
+</html>

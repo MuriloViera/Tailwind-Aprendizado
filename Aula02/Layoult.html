@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layoult com Tailwind</title>
+    <link rel="stylesheet" href="../Tailwind/tailwindstyle.css">
+</head>
+<body>
+
+    <!--Container-->
+    <div class="container bg-red-500 mx-auto p-4 my-4 text-white border-black border-2">
+        <p>O texto do container</p>
+    </div>
+
+    <!--Exercício-->
+    <div class="container bg-green-500 md:bg-blue-500 m-auto">
+        <p>Exercício 1</p>
+    </div>
+
+    <br/>
+
+    <!--Box sizing-->
+    <div class="container bg-purple-700 m-auto box-border p-10"> <!--O border box nao deixa o container passar do tamanho estipulado pra ele(witdh)-->
+        <p>Border box</p>
+    </div>
+
+    <div class="container bg-pink-700 m-auto mt-1 box-content p-10"> <!--O contenc box ele soma margin, padding e aumenta o tamanho que ele tinha-->
+        <p>Box content</p>
+    </div>
+
+    <br/>
+
+    <!--Display(block, inline e inline-block)-->
+    
+    <div class="container">
+        <!--Cada tag tem seu display padrao, a span tem o inline como padrao-->
+        <span class="block bg-indigo-600 w-24 m-auto">Bloco</span>
+        <span class="block bg-indigo-600 w-24 m-auto">Bloco</span>
+        
+        <!--Cada tag tem seu display padrao, a span tem o block como padrao-->
+        <div class="inline bg-yellow-900 w-24">Não bloco</div>
+        <div class="inline bg-yellow-900 w-24">Não bloco</div>
+
+        <!--Div com display invisível-->
+        <div class="hidden bg-yellow-900 w-24">Não bloco</div>
+    </div>
+
+    <!--Exercicio 2-->
+    <div class="container">
+        <div class="inline-block bg-pink-500">Div1</div>
+        <div class="inline-block bg-green-900">Div2</div>
+        <div class="inline-block bg-red-900">Div3</div>
+    </div>
+
+
+    
+</body>
+</html>
