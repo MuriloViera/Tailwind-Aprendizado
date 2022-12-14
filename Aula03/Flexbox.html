@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Tailwind/tailwindstyle.css">
+    <title>Flexbox</title>
+</head>
+<body>
+    
+    <div class="flex flex-row bg-green-500">
+        <div class="bg-red-600 p-6 m-2">1</div>
+        <div class="bg-red-600 p-6 m-2">2</div>
+        <div class="bg-red-600 p-6 m-2">3</div>
+    </div>
+
+    <br>
+
+    <div class="flex flex-col bg-blue-600">
+        <div class="bg-red-600 p-6 m-2">1</div>
+        <div class="bg-red-600 p-6 m-2">2</div>
+        <div class="bg-red-600 p-6 m-2">3</div>
+    </div>
+
+    <br>
+
+    <div class="flex flex-row-reverse bg-purple-600">
+        <div class="bg-red-600 p-6 m-2">1</div>
+        <div class="bg-red-600 p-6 m-2">2</div>
+        <div class="bg-red-600 p-6 m-2">3</div>
+    </div>
+
+    <br>
+
+    <div class="flex flex-col-reverse bg-black">
+        <div class="bg-red-600 p-6 m-2">1</div>
+        <div class="bg-red-600 p-6 m-2">2</div>
+        <div class="bg-red-600 p-6 m-2">3</div>
+    </div>
+
+    <br>
+
+    <!--Exercício 5-->
+    <div class="flex flex-col bg-indigo-300">
+        <div class="bg-red-100 p-6 m-2">1</div>
+        <div class="bg-red-200 p-6 m-2">2</div>
+        <div class="bg-red-300 p-6 m-2">3</div>
+        <div class="bg-red-400 p-6 m-2">3</div>
+        <div class="bg-red-500 p-6 m-2">3</div>
+        <div class="bg-red-600 p-6 m-2">3</div>
+    </div>
+
+    <br>
+
+     <!--Wrap-->
+     <div class="flex flex-wrap bg-red-300"> <!--O wrap faz com que conforme a tela diminuia, ele faz com que os itens
+        se adaptem para continuar da forma que eu queria e nao cortar eles(diminuir a tela pra ver nivel mobile)-->
+        <div class="bg-red-400 p-6 m-2">1</div>
+        <div class="bg-red-500 p-6 m-2">2</div>
+        <div class="bg-red-600 p-6 m-2">3</div>
+        <div class="bg-red-700 p-6 m-2">3</div>
+        <div class="bg-red-800 p-6 m-2">3</div>
+        <div class="bg-red-900 p-6 m-2">3</div>
+     </div>
+
+     <div class="flex container bg-green-400 p-8">
+        <div class="flex-1 bg-green-800">1</div>
+        <div class="flex-2 bg-green-500">2</div>
+        <div class="flex-none bg-green-300">3</div>
+     </div>
+
+     <br>
+
+     <!--Order-->
+     <div class="flex flex-wrap bg-purple-900">
+        <div class="order-last bg-purple-800 p-6 m-3">1</div>
+        <div class="order-4 bg-purple-600 p-6 m-3">2</div>
+        <div class="order-3 bg-purple-500 p-6 m-3">3</div>
+        <div class="order-2 bg-purple-400 p-6 m-3">4</div>
+        <div class="order-first bg-purple-300 p-6 m-3">5</div>
+     </div>
+
+     <br>
+
+     <!--Exercício 6-->
+     <div class="flex flex-wrap bg-yellow-900">
+        <div class="lg:order-last bg-yellow-800 p-6 m-3">1</div>
+        <div class="lg:order-4 bg-yellow-600 p-6 m-3">2</div>
+        <div class="lg:order-3 bg-yellow-500 p-6 m-3">3</div>
+        <div class="lg:order-2 bg-yellow-400 p-6 m-3">4</div>
+        <div class="lg:order-first bg-yellow-300 p-6 m-3">5</div>
+     </div>
+
+    
+</body>
+</html>

@@ -31,8 +31,7 @@
 
     <br/>
 
-    <!--Display(block, inline e inline-block)-->
-    
+    <!--Display(block, inline e inline-block e none)-->
     <div class="container">
         <!--Cada tag tem seu display padrao, a span tem o inline como padrao-->
         <span class="block bg-indigo-600 w-24 m-auto">Bloco</span>
@@ -43,8 +42,10 @@
         <div class="inline bg-yellow-900 w-24">Não bloco</div>
 
         <!--Div com display invisível-->
-        <div class="hidden bg-yellow-900 w-24">Não bloco</div>
+        <div class="hidden bg-yellow-900 w-24">Não bloco</div> <!-- .hidden = display:none -->
     </div>
+
+    <br/>
 
     <!--Exercicio 2-->
     <div class="container">
@@ -53,7 +54,61 @@
         <div class="inline-block bg-red-900">Div3</div>
     </div>
 
+    <br/>
+  
+    <!--Float-->
+    <div class="bg-gray-800 float-right">Float right</div>
+    <div class="bg-gray-800 float-left">Float left</div>
+    <div class="clear-both"></div>
+    <div class="bg-gray-800 float-right">Float right</div>
 
-    
+    <!--Overflow-->
+    <div class="overflow-hidden h-16 m-6 bg-red-400"> <!--Corta o conteudo e respeita as dimensoes da div-->
+        <p>Testando overflow hidden</p>
+        <p>Testando overflow hidden</p>
+        <p>Testando overflow hidden</p>
+        <p>Testando overflow hidden</p>
+        <p>Testando overflow hidden</p>
+        <p>Testando overflow hidden</p>
+    </div>
+
+    <div class="overflow-auto h-16 m-6 bg-indigo-400"> <!--Adiciona uma scroll bar na div para ver o resto do conteudo-->
+        <p>Testando overflow auto</p>
+        <p>Testando overflow auto</p>
+        <p>Testando overflow auto</p>
+        <p>Testando overflow auto</p>
+        <p>Testando overflow auto</p>
+        <p>Testando overflow auto</p>
+    </div>
+
+    <div class="overflow-x-auto h-16 m-6 bg-purple-400">
+        Loremipsumdolorsit,ametconsecteturadipisicingelit.Iureanamculpadignissimosquibusdamomnisharummaxime,quiarepudiandaenemomagnoloribus,illum.Perferendisnihilnesciuntexpeditaexcepturiea.
+    </div>
+
+    <br>
+
+    <!--Position(Posicionar os elementos com base na TELA ignorando tudo se ela nao tiver encapsluada por algo relativo)-->
+    <div class="relative bg-yellow-500 h-52">
+        Container
+        <div class="absolute top-0 right-0 bg-green-500">Absolute</div>
+        <div class="absolute bottom-0 right-0 bg-purple-900">Absolute</div><!--Exercício 3-->
+    </div>
+
+    <br>
+
+    <!--Visibilidade-->
+    <div class="container bg-blue-500 visible">Visivel</div>
+    <div class="container bg-green-700 invisible">Se não me ve parça</div>
+
+    <br>
+
+    <!--Z index-->
+    <!--Exercicio 4-->
+    <div class="container relative">
+        <div class="bg-red-300 h-28 w-28 p-50 absolute z-20">Na frente</div>
+        <div class="bg-red-600 h-28 w-28 p-50 absolute z-10 m-4">Atras</div>
+        <div class="bg-yellow-600 h-28 w-28 p-50 absolute m-8">Atras</div>
+    </div>
+
 </body>
 </html>
