@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Tailwind/tailwindstyle.css">
+    <title>Grid</title>
+
+</head>
+<body>
+    <!--Grid col-->
+    <div class="grid bg-red-500 grid-cols-3">
+        <div class="border-2 border-black">1</div>
+        <div class="border-2 border-black">2</div>
+        <div class="border-2 border-black">3</div>
+    </div>
+
+    <br>
+
+    <!--Exercício 7-->
+    <div class="grid grid-cols-3">
+        <div class="bg-purple-300">1</div>
+        <div class="bg-green-300">2</div>
+        <div class="bg-purple-300">3</div>
+        <div class="bg-green-300">4</div>
+        <div class="bg-purple-300">5</div>
+        <div class="bg-green-300">6</div>
+        <div class="bg-purple-300">7</div>
+        <div class="bg-green-300">8</div>
+        <div class="bg-purple-300">9</div>
+    </div>
+
+    <br>
+
+    <!--Exercício 8-->
+    <!--Col span, basicamente eu expandir um elemento do grid pra ocupar mais de uma posição do grid-->
+    <div class="grid grid-cols-5">
+        <div class="col-span-5 bg-gray-500 text-white">Header</div>
+        <div class="bg-indigo-400">
+            <ul>
+                <li>Home</li>
+                <li>Produtos</li>
+                <li>Contatos</li>
+                <li>Blog</li>
+            </ul>
+        </div>
+        <div class="bg-yellow-700 col-span-3">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum, assumenda, asperiores ipsam voluptatibus magnam vel, ipsa rerum sapiente vero nostrum tenetur nihil harum ipsum non hic laudantium fuga. Obcaecati, veritatis?</p>
+        </div>
+        <div class="bg-indigo-700">Barra Lateral Direita</div>
+        <div class="col-span-5 bg-gray-500 text-white">Footer</div>
+    </div>
+
+    <br> 
+    
+    <!--Grid rows-->
+    <div class="grid grid-rows-4 grid-flow-col">
+        <div class="border-2 border-white bg-pink-500">1</div>
+        <div class="border-2 border-white bg-pink-300">2</div>
+        <div class="border-2 border-white bg-pink-500">3</div>
+        <div class="border-2 border-white bg-pink-300">4</div>
+        <div class="border-2 border-white bg-pink-500">5</div>
+        <div class="border-2 border-white bg-pink-300">6</div>
+        <div class="border-2 border-white bg-pink-500 row-span-2">7</div>
+    </div>
+
+    <br>
+
+    <!--Exercicio 9-->
+    <!--Gap-->
+    <div class="grid grid-cols-3 gap"> <!--Gap normal adiciona o espaçamento em todos lados, gap-x adiciona so dos lados e gap-y adiciona so em cima e em baixo dos elmentos-->
+        <div class="bg-purple-300">1</div>
+        <div class="bg-purple-600">2</div>
+        <div class="bg-purple-300">3</div>
+        <div class="bg-purple-600">4</div>
+        <div class="bg-purple-300">5</div>
+        <div class="bg-purple-600">6</div>
+    </div>
+
+</body>
+</html>
