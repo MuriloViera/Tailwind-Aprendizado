@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Tailwind/tailwindstyle.css">
+    <title>Customização do Tailwind</title>
+</head>
+<body>
+    <!--Criando breakpoints-->
+    <!--Se eu criar uma cor ou um breakpoint e por ele dentro de theme{} em config.js o tailwind vai reconhecer SÓ eles, e vai apagar as outras cores e os outro breakepoints que existem-->
+    <!--Para esses caras funcionarem dentro de theme tem que ter uma chave 
+        screen: {
+            'tablet': '640px',
+            'cel': {'max' : '400px'}
+        }
+    e depois recompilo o stylesheet do css-->
+    <h1 class="text-black bg-blue-200 tablet:text-5xl tablet:bg-red-500">Testando min width</h1>
+    <h1 class="text-purple-500 bg-green-300 cel:text-blue-800 cel:bg-red-800 ">Textando max width</h1> <!--Usar mais esse por causa do tailwind-->
+    
+
+    <!--Adicionando ou alterando cores existentes-->
+    <!--Da mesma forma, se eu colocar dentro do extend{}, ao inves dele reconhecer so o que eu to passando, ele ADICIONA aos breakpoints ou cores ja existentes-->
+    <!--Para isso funcionar dentro do extend{} tenho que ter
+        colors: {
+            'new-blue': '#243C5A',
+        }
+    -->
+    <h1 class="text-black bg-new-blue">Cor nova</h1>
+
+
+    <!--Extendendo ou alterando os que ja existem spacing-->
+    <!--Mesma coisa dentro do extend{} tem que ter
+        spacing: {
+        '50' : '20rem',
+      }
+    -->
+    <p class="text-green-500 bg-red-400 p-100 m-100">Alterando ou adicionando espacings</p>
+
+</body>
+</html>
