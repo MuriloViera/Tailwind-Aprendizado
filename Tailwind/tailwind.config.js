@@ -8,6 +8,9 @@ module.exports = {
       },
       spacing: {
         '100' : '25rem',
+      },
+      fontFamily: {
+        'arial': 'Arial'
       }
     },
   },

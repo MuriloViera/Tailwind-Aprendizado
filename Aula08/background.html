@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background</title>
+    <link rel="stylesheet" href="../Tailwind/tailwindstyle.css">
+</head>
+<body>
+    <!--Background-->
+    <!--O bg local ele passa a imagem com a scrollbar de dentro a div mesmo-->
+    <div class="h-48 overflow-auto bg-local" style="background-image: url(img/bg_cidade.jpg);">
+        <p class="p-10">Teste</p>
+        <p class="p-10">Teste</p>
+        <p class="p-10">Teste</p>
+        <p class="p-10">Teste</p>
+        <p class="p-10">Teste</p>
+        <p class="p-10">Teste</p>
+    </div>
+
+    <p class="p-10">Teste</p>
+    <p class="p-10">Teste</p>
+    <p class="p-10">Teste</p>
+    <p class="p-10">Teste</p>
+    <p class="p-10">Teste</p>
+    <p class="p-10">Teste</p>
+
+    <br>
+
+    <!--Com o fixed a imagem é passada de acordo com a scrollbar da pagina-->
+    <div class="h-48 bg-fixed" style="background-image: url(img/bg_cidade.jpg);">
+        <p class="p-10">Teste</p>
+        <p class="p-10">Teste</p>
+        <p class="p-10">Teste</p>
+        <p class="p-10">Teste</p>
+        <p class="p-10">Teste</p>
+        <p class="p-10">Teste</p>
+    </div>
+
+    <p class="p-10">Teste</p>
+    <p class="p-10">Teste</p>
+    <p class="p-10">Teste</p>
+    <p class="p-10">Teste</p>
+
+    <br>
+
+    <!--Opacity-->
+    <p class="p-10 bg-pink-500 bg-opacity-0">Opaca</p>
+    <p class="p-10 bg-pink-500 bg-opacity-50">Quase opaca</p>
+    <p class="p-10 bg-pink-500 bg-opacity-100">Não opaca</p>
+
+    <br>
+
+    <!--Posição da imagem-->
+    <div class="h-48 overflow-auto bg-center" style="background-image: url(img/bg_cidade.jpg);">
+        <p class="p-10">Teste</p>
+        <p class="p-10">Teste</p>
+        <p class="p-10">Teste</p>
+        <p class="p-10">Teste</p>
+        <p class="p-10">Teste</p>
+        <p class="p-10">Teste</p>
+    </div>
+
+    <br>
+
+    <!--Posição da imagem-->
+    <div class="h-48 bg-no-repeat bg-center" style="background-image: url(img/tailwind.png);">
+        <p class="p-10">Teste</p>
+        <p class="p-10">Teste</p>
+    </div>
+
+    <br>
+
+    <!--Auto/cover/contain-->
+    <!--Cover tenta no maximo fazer a imagem caber na div que ele esta sem perder a qualidade-->
+    <div class="h-48 bg-cover" style="background-image: url(img/bg_cidade.jpg);">
+        <p class="p-10">Teste</p>
+        <p class="p-10">Teste</p>
+    </div>
+
+    <br>
+    <!--Contain vai fazer a imagem caber dentro da tag pai-->
+    <div class="h-48 bg-contain" style="background-image: url(img/bg_cidade.jpg);">
+        <p class="p-10">Teste</p>
+        <p class="p-10">Teste</p>
+    </div>
+
+    <br>
+
+    <!--Gradient-->
+    <div class="h-48 bg-gradient-to-b from-purple-600 via-pink-600 to-red-600">
+        <p class="p-10">Teste</p>
+        <p class="p-10">Teste</p>
+    </div>
+    
+</body>
+</html>
