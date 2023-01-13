@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.item-nav-mid{
+    @apply mr-4 border border-transparent rounded-sm px-2 py-1
+}
+
+.item-nav-mid:hover{
+    @apply border-white
+}
+
+.item-nav-inf{
+    @apply border-transparent py-1 px-3 border-b-2 
+}
+
+.item-nav-inf:hover{
+    @apply hover:text-orange-650 hover:border-orange-650
+}
+
+.item-loja-livros{
+    @apply text-blue-600 underline px-1 border-r border-black
+}
+
+.item-loja-livros:hover{
+    @apply hover:text-orange-650
+}
+
+/*Da pra passar uma classe que so vai ser applicada em media query
+
+@screen md{
+    .nomeclasse{
+        @apply algo
+    }
+}
+
+*/
+

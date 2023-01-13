@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interatividade</title>
+    <link rel="stylesheet" href="../Tailwind/tailwindstyle.css">
+</head>
+<body>
+    <!--Appearence none(retira a aparencia que ja vem por padrao em algumas tags)-->
+    <select class="m-4">
+        <option value="">Teste</option>
+    </select>
+
+    <select class="m-4 appearance-none">
+        <option value="">Teste</option>
+    </select>
+
+    <!--Cursores-->
+    <div class="w-28 h-20 bg-pink-300 m-4 rounded-xl cursor-pointer">Cursor de ponteiro</div>
+    <div class="w-28 h-20 bg-pink-500 m-4 rounded-xl cursor-wait">Cursor de carregamento</div>
+    <div class="w-28 h-20 bg-pink-700 m-4 rounded-xl cursor-not-allowed">Cursor de ponteiro</div>
+
+    <!--Outline-->
+    <div class=" flex h-10 bg-yellow-300 items-center m-4">
+        <input type="text" placeholder="Input com outline">
+        <input class="outline-none mx-2" type="text" placeholder="Input sem outline">
+        <input class="outline-white mx-2" type="text" placeholder="Input com outline branco">
+    </div>
+
+    <!--Pointer events-->
+    <select class="m-4">
+        <option value="">Teste</option>
+    </select>
+
+    <select class="m-4 pointer-events-none"><!--Tiro o evento de clique do ponteiro, serve para qualquer tag de clique-->
+        <option value="">Teste</option>
+    </select>
+
+    <!--Resize-->
+    <div class="m-4">
+        <textarea class="border-2 border-black" name="" id="" cols="30" rows="10"></textarea> <!--Por padrao vem resize y-->
+        <textarea class="border-2 border-black resize-x" name="" id="" cols="30" rows="10"></textarea>
+        <textarea class="border-2 border-black resize-none" name="" id="" cols="30" rows="10"></textarea>
+    </div>
+
+    <!--No select-->
+    <p class="select-none bg-gray-600 m-4">Esse parágrafo não pode ser selecionado</p>
+    
+    <br>
+
+    
+</body>
+</html>
