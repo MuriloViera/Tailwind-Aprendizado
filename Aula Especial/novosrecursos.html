@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Tailwind/tailwindstyle.css">
+    <title>Document</title>
+</head>
+<body>
+    <!--Cores novas(Porém elas tem que ser adicionadas)-->
+    <div class="bg-amber-500 p-10 text-center">Cor nova</div>
+
+    <!--Darkmode(Darkmode é simples, é uma media que voce adiciona antes da classe para que essa classe so entre em vigor
+        quando o darkmode estiver funcionando, exemplo dark:text-white)-->
+    <!--Darkmode tem que ser adicionado no config.js e tem que ser especificado se o darkmode vai vir do SO(darkmode:media)
+        ou se o usuário do site que vai decidir (darkmode:class)-->    
+    <!--Darkmode(Com o class ele vira um modo manual de ativar ou desativar sem depender da config do SO, mas ai eu tenho
+        que por um script)-->
+    <div class="text-center">
+        <button id="dark-mode" class="border bg-white text-black dark:bg-black dark:text-white rounded py-2 px-4 my-2">Ativar/desativar DarkMode</button>
+        <p class="bg-gray-500 py-5 dark:bg-black dark:text-white">Teste de DarkMode</p>
+    </div>
+
+    <script>
+        const btn = document.querySelector('#dark-mode'); //Selecionando pelo id
+        const html = document.querySelector('html'); //Selecionando pela tag
+
+        btn.addEventListener('click', function(){
+            html.classList.toggle('dark');
+        });
+    </script>
+
+    <!--Ring(Semelhante a borda)-->
+    <div class="text-center my-5">
+        <button class="py-2 px-4 bg-amber-600 text-white ring-4 ring-black rounded hover:bg-black">Ring Externo</button>
+        <button class="py-2 px-4 bg-pink-600 text-white ring-4 ring-black rounded-full hover:bg-black ring-inset">Ring Externo</button>
+    </div>
+
+    <!--Novos overflow-->
+    <p class="max-w-xs m-6 p-6 bg-blue-300 mx-auto overflow-ellipsis overflow-hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporadeskasttruefastoharkstqwesadassdasdaasadasdassasasasas quasi adipisci aperiam, laudantium quisquam aliquid esse nulla, vel eveniet nisi ullam officia, neque ratione itaque porro dolores nihil? Rem, accusantium.</p>
+    
+</html>
